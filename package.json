@@ -13,7 +13,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/patx"
+    "url": "https://github.com/umijs/umi"
   },
   "keywords": [
     "patx"
@@ -22,14 +22,15 @@
     "chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)"
   ],
   "license": "MIT",
-  "bugs": "http://github.com/umijs/patx/issues",
-  "homepage": "https://github.com/umijs/patx/tree/master/packages/patx#readme",
+  "bugs": "http://github.com/umijs/umi/issues",
+  "homepage": "https://github.com/umijs/umi/tree/master/packages/umi#readme",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
     "@umijs/bundler-webpack": "3.5.21",
     "@umijs/core": "3.5.21",
+    "umi":"3.5.21",
     "@umijs/deps": "3.5.21",
     "@umijs/preset-built-in": "3.5.21",
     "@umijs/runtime": "3.5.21",
