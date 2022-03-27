@@ -12,5 +12,5 @@ test('normal', async () => {
     },
   });
   // @ts-ignore
-  expect(config.resolve.alias.umi).toEqual(process.env.UMI_DIR);
+  expect(config.resolve.alias.patx).toEqual(process.env.UMI_DIR);
 });

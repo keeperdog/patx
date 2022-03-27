@@ -12,13 +12,13 @@ const v = process.version;
 if (v && parseInt(v.slice(1)) < 10) {
   console.log(
     chalk.red(
-      `Your node ${v} is not supported by umi, please upgrade to 10 or above.`,
+      `Your node ${v} is not supported by patx, please upgrade to 10 or above.`,
     ),
   );
   process.exit(1);
 }
 
-// process.argv: [node, umi.js, command, args]
+// process.argv: [node, patx.js, command, args]
 const args = yParser(process.argv.slice(2), {
   alias: {
     version: ['v'],
@@ -39,7 +39,7 @@ if (args.version && !args._[0]) {
 
 // allow parent framework to modify the title
 if (process.title === 'node') {
-  process.title = 'umi';
+  process.title = 'patx';
 }
 
 (async () => {
@@ -55,7 +55,7 @@ if (process.title === 'node') {
         process.on('SIGINT', () => {
           child.kill('SIGINT');
           // ref:
-          // https://github.com/umijs/umi/issues/6009
+          // https://github.com/umijs/patx/issues/6009
           process.exit(0);
         });
         process.on('SIGTERM', () => {

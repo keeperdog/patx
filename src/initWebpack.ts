@@ -4,7 +4,7 @@ import { createDebug } from '@umijs/utils';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 
-const debug = createDebug('umi:cli:initWebpack');
+const debug = createDebug('patx:cli:initWebpack');
 
 const DEFAULT_CONFIG_FILES = [
   '.umirc.ts',
